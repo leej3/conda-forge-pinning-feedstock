@@ -12,14 +12,14 @@ c_compiler:
   - vs2017                     # [win]
 c_compiler_version:            # [unix]
   - 11                         # [osx]
-  - 9                          # [linux]
+  - 8                          # [linux]
 cxx_compiler:
   - gxx                        # [linux]
   - clangxx                    # [osx]
   - vs2017                     # [win]
 cxx_compiler_version:          # [unix]
   - 11                         # [osx]
-  - 9                          # [linux]
+  - 8                          # [linux]
 fortran_compiler:              # [unix or win64]
   - gfortran                   # [linux64 or (osx and x86_64)]
   - gfortran                   # [aarch64 or ppc64le or armv7l]
@@ -27,7 +27,7 @@ fortran_compiler:              # [unix or win64]
 fortran_compiler_version:      # [unix or win64]
   - 11                         # [osx and arm64]
   - 9                          # [osx and x86_64]
-  - 9                          # [linux]
+  - 8                          # [linux]
   - 5                          # [win64]
 m2w64_c_compiler:              # [win]
   - m2w64-toolchain            # [win]
@@ -54,7 +54,7 @@ cudnn:
   - 7                          # [linux64]
 
 _libgcc_mutex:
-  - 0.1 conda_forge
+  - 0.1 main
 #
 # Go Compiler Options
 #
@@ -116,7 +116,7 @@ channel_targets:
 
 cdt_name:  # [linux]
   - cos6   # [linux64]
-  - cos7   # [linux and aarch64]
+  - amzl2  # [linux and aarch64]
   - cos7   # [linux and ppc64le]
   - cos7   # [linux and armv7l]
 
