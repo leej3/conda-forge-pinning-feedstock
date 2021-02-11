@@ -116,7 +116,7 @@ channel_targets:
 
 cdt_name:  # [linux]
   - cos6   # [linux64]
-  - amzl2  # [linux and aarch64]
+  - amzn2  # [linux and aarch64]
   - cos7   # [linux and ppc64le]
   - cos7   # [linux and armv7l]
 
