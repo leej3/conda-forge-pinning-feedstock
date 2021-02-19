@@ -2,7 +2,7 @@
 #    will target, not what subdir the compiler package will be itself.
 #    For example, we need a win-64 vs2008_win-32 package, so that we compile win-32
 #    code on win-64 miniconda.
-bootstrapping: yes
+bootstrapping: no
 
 cross_compiler_target_platform:  # [win]
   - win-64                     # [win]
@@ -27,7 +27,7 @@ fortran_compiler:              # [unix or win64]
 fortran_compiler_version:      # [unix or win64]
   - 11                         # [osx and arm64]
   - 9                          # [osx and x86_64]
-  - 8                          # [linux]
+  - 10                         # [linux]
   - 5                          # [win64]
 m2w64_c_compiler:              # [win]
   - m2w64-toolchain            # [win]
@@ -556,7 +556,7 @@ ntl:
 # we build for the oldest version possible of numpy for forward compatibility
 numpy:
   # part of a zip_keys: python, python_impl, numpy
-  - 1.16   # [not (osx and arm64)]
+  #- 1.16   # [not (osx and arm64)]
   - 1.16   # [not (osx and arm64)]
   - 1.16   # [not (osx and arm64)]
   - 1.19   # [osx and arm64]
@@ -602,12 +602,12 @@ pybind11_abi:
   - 4
 python:
   # part of a zip_keys: python, python_impl, numpy
-  - 3.6.* *_cpython    # [not (osx and arm64)]
+  #- 3.6.* *_cpython    # [not (osx and arm64)]
   - 3.7.* *_cpython    # [not (osx and arm64)]
   - 3.8.* *_cpython
 python_impl:
   # part of a zip_keys: python, python_impl, numpy
-  - cpython   # [not (osx and arm64)]
+  #- cpython   # [not (osx and arm64)]
   - cpython   # [not (osx and arm64)]
   - cpython
 qt:
